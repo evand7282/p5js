@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+      <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+function setup() {
+  createCanvas(1000, 1000);
+}
+
+function draw() {
+  background(255,255,255);
+  stroke("black");
+  //head
+  strokeWeight(5);
+  fill(240,234,197);
+  ellipse(550,150,100);
+  //eyes and face
+  strokeWeight(15);
+  point(510,150); //left eye
+  point(590,150); //right eye
+  strokeWeight(10);
+  line(515,180,580,180); //mouth
+  //halo + inside halo
+  strokeWeight(2);
+  fill(244,255,108);
+  ellipse(550,91,120,12);
+  strokeWeight(2);
+  fill(255,255,255);
+  ellipse(550,91,60,8);
+  //skrek horns (lines)
+  stroke("green");
+  strokeWeight(5);
+	line(500,120,480,80);
+  line(590,110,610,80);
+  //body
+  stroke("black");
+  fill("orange");
+  rect(500,200,100,200);
+  //arms
+  line(500,220,410,290);
+  line(600,220,410,290);
+  //speech
+  strokeWeight(25);
+  stroke("black");
+  fill("red");
+  textSize(30);
+  text("*inhales oxygen*" ,100,200);
+  text("young male specimen" ,130,250);
+  
+
+
+}
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/evand7282/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
